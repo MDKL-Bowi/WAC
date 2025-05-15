@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# First handle the HTTPS redirect
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^10\.10\.18\.88 [NC]
+RewriteRule ^(.*)$ https://10.10.18.88/$1 [L,R=301]
+
+# Then handle the PHP extension removal
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+Options -Indexes
