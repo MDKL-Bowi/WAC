@@ -1,0 +1,16 @@
+UX:
+OK Login 
+OK Login Database
+rework Index.php (css, js, html)OK
+record date to curren
+automatically record car wac data outside of index.php
+view.php display data from database should use be fetch manually instead of automatically to heavy load.
+view.php display should be table limited within 10 (auto), 20, 50 per display 
+
+Security:
+account encryption ok
+SSL for database
+HTTPS
+TLS
+directory view should be disabled
+move include outside htdocs
