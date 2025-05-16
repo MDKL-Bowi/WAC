@@ -66,6 +66,10 @@ WAC (CAR Input Image Control) is a web application designed for managing and con
 
 Please follow consistent code style and provide clear commit messages.
 
+...
+
+## LICENSE
+
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
