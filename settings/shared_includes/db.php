@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'wac_db';
 $username = 'root'; // Default XAMPP username
-$password = 'Niz9Cz[SVkAqUMVO';     // Default XAMPP password
+$password = '';     // Default XAMPP password
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
